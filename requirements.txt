@@ -1,0 +1,5 @@
+# requirements.txt
+cryptography>=3.0
+aiohttp>=3.7
+PyQt5>=5.15
+aiosqlite>=0.17
