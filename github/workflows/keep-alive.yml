@@ -1,0 +1,10 @@
+name: Keep Render Alive
+on:
+  schedule:
+    - cron: '*/10 * * * *' # Каждые 10 минут
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render App
+        run: curl -s https://carrier-pigeon.onrender.com/ > /dev/null
